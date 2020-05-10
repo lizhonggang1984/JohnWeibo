@@ -1,0 +1,8 @@
+<h1> Admin Infor Page</h1>
+username: <%= @admin.username %>
+<br>
+email: <%= @admin.email %>
+<br>
+<%= link_to 'Back', admins_path %>
+<br>
+<%= link_to "Log Out", logout_path, method:"delete" %>
