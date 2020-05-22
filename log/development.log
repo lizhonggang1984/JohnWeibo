@@ -6673,3 +6673,49 @@ Processing by PostsController#index as HTML
 Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.0ms | Allocations: 3741)
 
 
+Started GET "/" for ::1 at 2020-05-23 03:14:53 +0800
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PostsController#index as HTML
+  Rendering posts/index.html.erb within layouts/application
+  Rendered posts/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 409)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 122ms (Views: 104.2ms | ActiveRecord: 0.0ms | Allocations: 36335)
+
+
+Started GET "/posts/allcontent" for ::1 at 2020-05-23 03:14:57 +0800
+Processing by PostsController#allcontent as HTML
+  Rendering posts/allcontent.html.erb within layouts/application
+  [1m[36mPost Load (0.3ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/posts/allcontent.html.erb:14
+  Rendered posts/allcontent.html.erb within layouts/application (Duration: 36.4ms | Allocations: 4050)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 58ms (Views: 52.0ms | ActiveRecord: 1.4ms | Allocations: 7887)
+
+
+Started GET "/login" for ::1 at 2020-05-23 03:15:03 +0800
+Processing by SessionsController#new as HTML
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 46.8ms | Allocations: 4392)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 89ms (Views: 74.9ms | ActiveRecord: 0.0ms | Allocations: 8685)
+
+
+Started GET "/admins" for ::1 at 2020-05-23 03:15:10 +0800
+Processing by AdminsController#index as HTML
+  Rendering admins/index.html.erb within layouts/application
+  Rendered admins/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 145)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 53ms (Views: 45.8ms | ActiveRecord: 0.0ms | Allocations: 5024)
+
+
+Started GET "/admins/allcontent" for ::1 at 2020-05-23 03:15:15 +0800
+Processing by AdminsController#allcontent as HTML
+  Rendering admins/allcontent.html.erb within layouts/application
+  [1m[36mAdmin Load (0.2ms)[0m  [1m[34mSELECT "admins".* FROM "admins"[0m
+  ↳ app/views/admins/allcontent.html.erb:15
+  Rendered admins/allcontent.html.erb within layouts/application (Duration: 39.4ms | Allocations: 4444)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 71ms (Views: 66.7ms | ActiveRecord: 1.4ms | Allocations: 8264)
+
+
